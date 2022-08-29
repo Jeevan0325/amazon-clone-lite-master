@@ -7,7 +7,7 @@ const Header = () => {
         <header className="header">
                 <div className="header-logo">
                       <BsShopWindow className="header-logo-container"></BsShopWindow>
-                      <h1 className="header-logo-title">eShop</h1>
+                      <h2 className="header-logo-title">eShop</h2>
                 </div>
 
                 <div className="header-search">
@@ -29,7 +29,8 @@ const Header = () => {
                             <spam className   = "header-nav-your-shop-title">Shop</spam>
                      </div>
                     <div  className="header-nav-cart">
-                            <MdOutlineShoppingBasket className="header-nav-cart-logo">0</MdOutlineShoppingBasket>
+                            <MdOutlineShoppingBasket className="header-nav-cart-logo"></MdOutlineShoppingBasket>
+                            <spam className="header-nav-cart-count">0</spam>
                     </div>
                 </div>
         </header>
