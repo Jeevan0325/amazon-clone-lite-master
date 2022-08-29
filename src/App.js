@@ -1,19 +1,16 @@
 import React from 'react';
 import './App.css';
-import Header from "./Components/Header/Header"
-import Home from "./Components/Home/Home";
-import Product from './Components/Product/Product';
+import Header from './Header';
+import Home from './Home';
+
+
 const App=()=> {
   return (
     <div className="App">
-       <Header></Header>
-       <Home></Home>
-       <div className="Product1">
-       <Product>
-        
-       </Product>
-       
-       </div>
+      
+       <Header/>
+       <Home/>
+      
     </div>
   );
 }
