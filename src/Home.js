@@ -53,7 +53,7 @@ const Home = () => {
                             title="Samsung LC49RG90SSUXEN 49' Curved LED Gaming Monitor - Super Ultra Wide Dual QHD 5120 x 1440"
                             price={1094.98}
                             rating={4}
-                            image="https://m.media-amazon.com/images/I/81rus0UFhsL.jpg"
+                            image="https://m.media-amazon.com/images/I/81rus0UFhsL._AC_SL400_.jpg"
                         />
                     </div>
                 </div>
