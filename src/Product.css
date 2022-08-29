@@ -12,7 +12,9 @@
     z-index: 1;
 }
 .product-rating{
-    display: contents;
+    display: contents; 
+    display: flex;
+    margin-top: -30px;
 }
 .product > img{
     max-height: 200px;
@@ -28,9 +30,9 @@
     color: #111;
 }
 .product-price{
-    margin-top: 5px;
+    margin-top: -10px;
 }
 .product-info{
     height: 100px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }

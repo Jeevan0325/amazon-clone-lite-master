@@ -1,19 +1,25 @@
 import React from 'react';
 import './Product.css';
 
-const Product = () => {
+const Product = ({id,title,rating,price,image}) => {
     return (
        
             <div className="product">
                 <div className="product-info">
-                    <p>Bennett Mystic 15.6 inch Laptop Shoulder Messenger Sling office Bag,Water repeilent Fabric for Men and Women(Blue)</p>
+                    <p>{title}</p>
                     <p className="product-price">
                         <small>$</small>
-                        <strong>11.98</strong>
+                        <strong>{price}</strong>
                     </p>
-                    <div className="product-rating">⭐️ ⭐️</div>
+                    <div className="product-rating">
+                        {Array(rating)
+                        .fill()
+                        .map((_,i) =>(
+                            <p>⭐️</p>
+                        ))}
+                    </div>
                 </div>
-                <img src="https://m.media-amazon.com/images/I/51S-b58EREL._SL500_.jpg" alt="" className="product-image"/>
+                <img src={image}alt=""/>
                 <button>Add to Basket</button>
             </div>
        
