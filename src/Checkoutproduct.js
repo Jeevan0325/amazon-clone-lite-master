@@ -1,5 +1,5 @@
 import React from 'react';
-import Checkout from './Checkout';
+
 import "./Checkoutproduct.css"
 
 const CheckoutProduct = () => {
@@ -25,4 +25,4 @@ const CheckoutProduct = () => {
        
     )
 }
- export default CheckoutProduct;
+export default CheckoutProduct;
