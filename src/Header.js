@@ -8,6 +8,7 @@ import { useStateValue } from './StateProvider';
 
 
 const Header = () => {
+    
     const [{basket},dispatch] = useStateValue();
     return (
         <header className="header">
@@ -28,11 +29,12 @@ const Header = () => {
                 </div>
 
                 <div className="header-nav"> 
+                <Link to ="/login" style={{textDecoration: "none"}}>
                      <div className="header-nav-signin">
                             <span className="header-nav-signin-text">Hello guest</span>
                             <span className="header-nav-signin-title">Sign In</span>
                      </div>
-
+                </Link>
                      <div className="header-nav-your-shop">
                             <span className="header-nav-your-shop-text">your</span>
                             <span className   = "header-nav-your-shop-title">Shop</span>
