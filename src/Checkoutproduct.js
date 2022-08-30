@@ -2,21 +2,25 @@ import React from 'react';
 
 import "./Checkoutproduct.css"
 
-const CheckoutProduct = () => {
+const CheckoutProduct = ({id, image,title,price,rating})  => {
     return (
         <div className="checkoutproduct">
                 
-                   <img src="https://m.media-amazon.com/images/I/51S-b58EREL._SL500_.jpg" alt="" className="checkoutproduct-image" />
+                   <img src={image} alt="" className="checkoutproduct-image" />
                    <div className="checkoutproduct-info">
                     <p className="checkoutproduct-title">
-                        title
+                        {title}
                     </p>
                     <p className="checkoutproduct-price">
                             <small>$</small>
-                            <strong>32</strong>
+                            <strong>{price}</strong>
                     </p>
                     <div className="checkoutproduct-rating">
-                            ⭐️ ⭐️
+                        {Array(rating)
+                            .fill()
+                            .map((_,i) =>(
+                                <p>⭐️</p>
+                            ))}
                     </div>
                     <button> remove form the basket</button>
                    </div>
